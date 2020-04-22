@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Invent.Migrations
 {
     [DbContext(typeof(InventDbContext))]
-    [Migration("20200422112913_FirstMigration")]
+    [Migration("20200422160324_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,9 +28,6 @@ namespace Invent.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
@@ -44,6 +41,9 @@ namespace Invent.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("amount")
+                        .HasColumnType("int");
+
                     b.HasKey("ProductId");
 
                     b.ToTable("Shopkeeper");
@@ -52,20 +52,20 @@ namespace Invent.Migrations
                         new
                         {
                             ProductId = 1,
-                            Amount = 0,
                             Date = new DateTime(2020, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductName = "Usha Celling Fan",
                             ProductPrice = 550,
-                            Quantity = 10
+                            Quantity = 10,
+                            amount = 0
                         },
                         new
                         {
                             ProductId = 2,
-                            Amount = 0,
                             Date = new DateTime(2020, 4, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductName = "Usha Mixer Grinder",
                             ProductPrice = 800,
-                            Quantity = 10
+                            Quantity = 10,
+                            amount = 0
                         });
                 });
 #pragma warning restore 612, 618

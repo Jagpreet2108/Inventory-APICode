@@ -9550,11 +9550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jagpreet Kaur\\source\\repos\\Invent\\Invent\\Invent.csproj",
+      "projectUniqueName": "C:\\Users\\Jagpreet Kaur\\Desktop\\Invent\\Invent\\Invent.csproj",
       "projectName": "Invent",
-      "projectPath": "C:\\Users\\Jagpreet Kaur\\source\\repos\\Invent\\Invent\\Invent.csproj",
+      "projectPath": "C:\\Users\\Jagpreet Kaur\\Desktop\\Invent\\Invent\\Invent.csproj",
       "packagesPath": "C:\\Users\\Jagpreet Kaur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jagpreet Kaur\\source\\repos\\Invent\\Invent\\obj\\",
+      "outputPath": "C:\\Users\\Jagpreet Kaur\\Desktop\\Invent\\Invent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
